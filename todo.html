@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>To Do List</title>
+    <link rel="stylesheet" href="CSS/stylesheet.css">
+    <script src="JS/todo.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <h1 id="headerTitle">Today's Top Priorities</h1>
+        <form>
+            <input type ="text" id="myInput" placeholder="Add something to do!" onfocus="this.placeholder=''" onblur="this.placeholder='Add something to do!'">
+            <input type="submit" id="submitButton" value="Add" onclick="newElement()">
+        </form> 
+    </div>
+
+    <ul id="myList">
+        <li id="activityOne" onclick="completeItem('activityOne')">Feed the Dogs<span class="close"></span></li>
+        <li id="activityTwo" onclick="completeItem('activityTwo')">Drink Some Coffee<span class="close"></span></li>
+        <li id="activityThree" onclick="completeItem('activityThree')">Lift Heavy Weights<span class="close"></span></li>
+        <li id="activityFour" onclick="completeItem('activityFour')">Nap<span class="close"></span></li>
+        <li id="activityFive" onclick="completeItem('activityFive')">Practice Coding<span class="close"></span></li>
+    </ul>
+</body>
+
+<footer>
+    <h2 id="signature">Made by: Dyllan Moore</h2>
+    <h3 id="connect">Connect with me on...</h3>
+    <a href="https://github.com/DyllanMoore">GitHub</a>
+    <a href="https://www.linkedin.com/in/dyllan-moore-9880a0229/">Linkedin</a>
+    <a href="https://codepen.io/dyllanmoore">Codepen</a>
+</footer>
+
+</html>
